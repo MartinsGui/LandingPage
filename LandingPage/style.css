@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #d8c40d;
+    --secondary-color: #f1e9b7;
+    --text-color: #333;
+    --hover-scale: 1.05;
+    --header-bg:#d8c40d;
+    --section-bg: #E9ECEF;
+    --aside-bg: #F8F9FA;
+    --footer-bg: #343A40;
+    --footer-text-color: #FFF;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+
+}
+
+.segImagem{
+    margin-top:  15px;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.segImagem p{
+    font-size: 8%;
+
+}
+.content-text{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 75px;
+}
+
+section {
+    background-color: var(--section-bg);
+    width: 70%;
+    padding: 20px;
+}
+
+aside {
+    background-color: var(--aside-bg);
+    width: 28%;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    z-index: 999;
+    top: 55px;
+    right: 0;
+    border-radius: 5px;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+article .whats{
+    width: 90px;
+    height: 75px;
+}
+article .instagram{
+    width: 50px;
+    height: 40px;
+
+}
+article ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover,
+aside ul a:hover {
+    color: var(--header-bg);
+    transition: color 0.3s ease;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+#typing-effect {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.logo {
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+article ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+article .ultimaParte .predio{
+    
+    width: 550px;
+    padding: 35px;
+}
+.ultimaParte .predio{
+    border-radius: 15px;
+}
+.Conselho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio{
+    margin: 25px;
+    mix-blend-mode: multiply;
+  
+}
+.logoConsult{
+   
+    display: flex;
+    justify-content: center;
+}
+
+
+.ultimaParte{
+    background-color: #E9ECEF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:row;
+}
+.ultimaParte p{
+    margin: 30px;
+}
+
+article{
+   padding: 20px ;
+}
+ 
+
